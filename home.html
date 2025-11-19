@@ -1,0 +1,510 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CycleHub</title>
+  <link rel="stylesheet" href="css/home.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/home-enhancements.css">
+
+<script defer src="js/home.js"></script>
+ 
+</head>
+<body>
+	  
+	  <!-- Business Hours -->
+<div class="business-hours">
+  <p><b>Mon - Fri:</b> 8:30 - 17:00<br>
+  <b>Sat:</b> 08:30 - 12:00</p>
+</div>
+
+	  <h1 style="text-align:center;">🚴 CycleHub🚴</h1>	
+
+		
+		<nav class="navbar">
+			<ul>
+				<li><a href="home.html"><b>Home</b></a></li>
+				<li><a href="aboutus.html"><b>About us</b></a></li>
+				<li><a href="contactus.html"><b>Contact Us</b></a></li>
+				<li><a href="events.html"><b>Events</b></a></li>
+				<li><a href="stolen-bikes.html"><b>Stolen Bikes</b></a></li>
+				<li><a href="gallery.html"><b>Gallery Light Box</b></a></li>
+			</ul>
+		</nav>
+
+
+  <div class="gallery">
+  
+	<!-- Bike 1 -->   
+
+	  
+<!-- Bike 1 Card -->
+<div class="bike-card">
+  <a href="#bike1" class="open-modal">
+    <img src="images/f1.jpg" height="150" alt="Cannondale Scalpel Si Lefty">
+  </a>
+  <h3><a href="#bike1" class="open-modal">Cannondale Scalpel Si Lefty</a></h3>
+  <p class="price"><strong>R 48,500</strong></p>
+</div>
+
+<!-- Bike 1 Modal -->
+<div id="bike1" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+
+    <!-- Title + Price -->
+    <h2>Cannondale Scalpel Si Lefty</h2>
+    <p class="modal-price"><strong>R 48,500</strong></p>
+
+    <!-- Scrollable Image Gallery -->
+    <div class="gallery">
+      <iframe
+        title="Bike 1 photos"
+        width="100%"
+        height="220"
+        frameborder="0"
+        scrolling="auto"
+        srcdoc='
+          <nobr>
+            <img src="images/f1.jpg" height="150"> &nbsp;
+            <img src="images/f2.jpg" height="150"> &nbsp;
+            <img src="images/f3.jpg" height="150"> &nbsp;
+            <img src="images/f4.jpg" height="150"> &nbsp;
+            <img src="images/f5.jpg" height="150"> &nbsp;
+            <img src="images/f6.jpg" height="150">
+          </nobr>
+        '>
+      </iframe>
+    </div>
+
+    <!-- Specs -->
+    <div class="specs">
+      <h3>Key Specifications</h3>
+      <table>
+        <tr><td>Condition</td><td>Used - Excellent</td></tr>
+        <tr><td>Size</td><td>L</td></tr>
+        <tr><td>Model Year</td><td>2020</td></tr>
+        <tr><td>Wheel Size</td><td>29"</td></tr>
+        <tr><td>Frame Material</td><td>Carbon</td></tr>
+        <tr><td>Riding Style</td><td>Marathon / Cross-Country</td></tr>
+        <tr><td>Fork</td><td>Ocho Carbon</td></tr>
+        <tr><td>Rear Shock</td><td>Fox</td></tr>
+        <tr><td>Drivetrain</td><td>1x12</td></tr>
+        <tr><td>Brakes</td><td>Disc</td></tr>
+        <tr><td>Wheels</td><td>Hollowgram 23 Carbon Edition</td></tr>
+        <tr><td>Tyres</td><td>Maxxis</td></tr>
+        <tr><td>Stem</td><td>Carbon</td></tr>
+        <tr><td>Handlebars</td><td>Carbon</td></tr>
+        <tr><td>Seatpost</td><td>Next Carbon</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+  
+    <!-- Bike 2 -->
+    <div class="bike-card" onclick="openModal('bike2')">
+      <img src="images/a1.jpg" height="100" alt="Scott Spark">
+      <h3>Scott Spark</h3>
+      <p><strong>R 45,000</strong></p>
+    </div>
+ 
+
+
+<!-- MODAL TEMPLATE FOR BIKE 2 -->
+<div id="bike2" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('bike2')">&times;</span>
+<!-- Manually scrollable -->
+
+<iframe
+  title="Bike 2 photos"
+  width="100%"
+  height="240"
+  frameborder="0"
+  scrolling="auto"
+  srcdoc='
+ 
+        <nobr>
+          <img src="images/a1.jpg" height="150"> &nbsp;
+          <img src="images/a2.jpg" height="150"> &nbsp;
+          <img src="images/a3.jpg" height="150"> &nbsp;
+          <img src="images/a4.jpg" height="150"> &nbsp;
+          <img src="images/a5.jpg" height="150"> &nbsp;
+          
+          <img src="images/a7.jpg" height="150"> &nbsp;
+          <img src="images/a8.jpg" height="150">
+        </nobr>
+
+  '>
+</iframe>
+
+								
+								
+      <h2>Scott Spark</h2>
+      <p><strong>Price:</strong> R 45,000</p>
+      <div class="specs">
+        <h3>Specs</h3>
+        <table>
+          <tr><th colspan="2">Key Specs</th></tr>
+		<tr><td>Model Year</td><td>2022</td></tr>
+		<tr><td>Frame Size Options</td><td>Medium</td></tr>
+		<tr><td>Wheel Size</td><td>29″</td></tr>
+		<tr><td>Suspension Travel</td><td>Front 100 mm / Rear 100 mm</td></tr>
+
+		<tr><th colspan="2">Components</th></tr>
+		<tr><td>Frame</td><td>HMF/IMP Carbon with Alloy Swingarm</td></tr>
+		<tr><td>Fork</td><td>FOX 32 Float Evolution CTD Air, 100 mm</td></tr>
+		<tr><td>Rear Shock</td><td>FOX Nude CTCD (Climb-Traction-Descend)</td></tr>
+		<tr><td>Brakes</td><td>Shimano SLX BR-M675, 180 mm (front), 160 mm (rear)</td></tr>
+		<tr><td>Shifters</td><td>Shimano SLX SL-M670-I, Rapidfire Plus</td></tr>
+		<tr><td>Front Derailleur</td><td>Shimano SLX FD-M675-E2</td></tr>
+		<tr><td>Rear Derailleur</td><td>Shimano XT RD-M786 SGS, 20-speed</td></tr>
+		<tr><td>Crankset</td><td>Shimano XT FC-M785, 38/24T</td></tr>
+		<tr><td>Cassette</td><td>Shimano CS-HG81-10, 11-36T</td></tr>
+		<tr><td>Chain</td><td>Shimano CN-HG54</td></tr>
+		<tr><td>Rims</td><td>Syncros XR2.5 (DT Swiss hubs)</td></tr>
+		<tr><td>Tires</td><td>Schwalbe Rocket Ron EVO, 29″ x 2.25″</td></tr>
+		<tr><td>Handlebar</td><td>Syncros FL1.5 Tbar, Alloy, 700 mm</td></tr>
+		<tr><td>Stem</td><td>Syncros XR1.5, 7050 Alloy</td></tr>
+		<tr><td>Saddle</td><td>Syncros XR2.0</td></tr>
+		<tr><td>Seatpost</td><td>Syncros FL1.5</td></tr>
+		<tr><td>Others</td><td>TwinLoc suspension remote; adjustable bottom bracket height</td></tr>
+		<tr><td>Weight</td><td>~11.9 kg (26.3 lb)</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+      
+
+  
+
+    <!-- Bike 3 -->
+    <div class="bike-card" onclick="openModal('bike3')">
+      <img src="images/b8.jpg" height="150px" alt="Specialized Carbon">
+      <h3>Specialized epic carbon</h3>
+      <p><strong>R 38,000</strong></p>
+   </div>
+ 
+
+
+
+  <!-- MODAL TEMPLATE FOR BIKE 3 -->
+	<div id="bike3" class="modal">
+		<div class="modal-content" height="150px">
+
+			<span class="close" onclick="closeModal('bike3')">&times;</span>
+<!-- Manually scrollable -->
+<iframe
+  title="Bike 2 photos"
+  width="100%"
+  height="240"
+  frameborder="0"
+  scrolling="auto"
+  srcdoc='
+ 
+        <nobr>
+          <img src="images/b1.jpg" height="150"> &nbsp;
+          <img src="images/b2.jpg" height="150"> &nbsp;
+          <img src="images/b3.jpg" height="150"> &nbsp;
+          <img src="images/b4.jpg" height="150"> &nbsp;
+          <img src="images/b5.jpg" height="150"> &nbsp;
+          <img src="images/b6.jpg" height="150"> &nbsp;
+          <img src="images/b7.jpg" height="150"> &nbsp;
+          <img src="images/b8.jpg" height="150">
+        </nobr>
+
+  '> 
+</iframe>
+
+
+
+      <h2>Specialized epic carbon</h2>
+      <p><strong>Price:</strong> R 38,000</p>
+      <div class="specs">
+        <h3>Specs</h3>
+        <table>
+		<tr><td>Model Year</td><td>2015</td></tr>
+		<tr><td>Frame</td><td>HMF/IMP Carbon with Alloy Swingarm</td></tr>
+		<tr><td>Groupset</td><td>Shimano SLX / XT 20-speed</td></tr>
+		<tr><td>Wheel Size</td><td>29 Inch</td></tr>
+		<tr><td>Category</td><td>Cross-Country / Race</td></tr>
+		<tr><td>Front Suspension</td><td>FOX 32 Float Evolution CTD Air, 100 mm</td></tr>
+		<tr><td>Rear Suspension</td><td>FOX Nude CTCD, 100 mm</td></tr>
+		<tr><td>Brakes</td><td>Shimano SLX BR-M675, 180 mm front / 160 mm rear</td></tr>
+		<tr><td>Crankset</td><td>Shimano XT FC-M785, 38/24T</td></tr>
+		<tr><td>Cassette</td><td>Shimano CS-HG81-10, 11-36T</td></tr>
+		<tr><td>Chain</td><td>Shimano CN-HG54</td></tr>
+		<tr><td>Rims</td><td>Syncros XR2.5 (DT Swiss hubs)</td></tr>
+		<tr><td>Tires</td><td>Schwalbe Rocket Ron EVO, 29 x 2.25"</td></tr>
+		<tr><td>Handlebar</td><td>Syncros FL1.5 Tbar, Alloy, 700 mm</td></tr>
+		<tr><td>Stem</td><td>Syncros XR1.5, 7050 Alloy</td></tr>
+		<tr><td>Saddle</td><td>Syncros XR2.0</td></tr>
+		<tr><td>Seatpost</td><td>Syncros FL1.5</td></tr>
+		<tr><td>Extras</td><td>TwinLoc suspension remote; adjustable bottom bracket height</td></tr>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- Bike 4 -->
+    <div class="bike-card" onclick="openModal('bike4')">
+      <img src="images/c1.jpg" height="100px" alt="Trek Fuel EX 5LRG">
+      <h3>Trek Fuel EX 5 LRG</h3>
+      <p><strong>R 38,500</strong></p>
+    </div>
+  
+
+
+
+  <!-- MODAL TEMPLATE FOR BIKE 4 -->
+	<div id="bike4" class="modal">
+		<div class="modal-content" style="max-width: 90%;">
+
+			<span class="close" onclick="closeModal('bike4')">&times;</span>
+
+<!-- Manually scrollable -->
+<iframe
+  title="Bike 2 photos"
+  width="100%"
+  height="240"
+  frameborder="0"
+  scrolling="auto"
+  srcdoc='
+ 
+        <nobr>
+          <img src="images/c1.jpg" height="150"> &nbsp;
+          <img src="images/c2.jpg" height="150"> &nbsp;
+          <img src="images/c3.jpg" height="150"> &nbsp;
+          <img src="images/c4.jpg" height="150"> &nbsp;
+          <img src="images/c5.jpg" height="150"> &nbsp;
+          <img src="images/c6.jpg" height="150"> &nbsp;
+          <img src="images/c7.jpg" height="150"> &nbsp;
+          <img src="images/c8.jpg" height="150">
+        </nobr>
+
+  '>
+</iframe>
+
+
+
+      <h2>Trek Fuel EX 5 LRG</h2>
+      <p><strong>Price:</strong> R 38,500</p>
+      <div class="specs">
+        <h3>Specs</h3>
+        <table>
+		<tr><td>Model Year</td><td>2023</td></tr>
+		<tr><td>Frame</td><td>Alpha Platinum Aluminum with magnesium rocker link</td></tr>
+		<tr><td>Groupset</td><td>Shimano Deore 1x12-speed</td></tr>
+		<tr><td>Wheel Size</td><td>29 Inch</td></tr>
+		<tr><td>Category</td><td>Trail / All-Mountain</td></tr>
+		<tr><td>Front Suspension</td><td>RockShox Recon Silver RL, 140 mm</td></tr>
+		<tr><td>Rear Suspension</td><td>X-Fusion Pro 2, 130 mm</td></tr>
+		<tr><td>Brakes</td><td>Shimano MT400, 180 mm front & rear</td></tr>
+		<tr><td>Crankset</td><td>Shimano Deore, 32T</td></tr>
+		<tr><td>Cassette</td><td>Shimano Deore, 10-51T</td></tr>
+		<tr><td>Chain</td><td>Shimano Deore</td></tr>
+		<tr><td>Rims</td><td>Bontrager Connection, Tubeless Ready</td></tr>
+		<tr><td>Tires</td><td>Bontrager XR3, 29 x 2.40"</td></tr>
+		<tr><td>Handlebar</td><td>Bontrager Alloy, 780 mm</td></tr>
+		<tr><td>Stem</td><td>Bontrager Elite, 50 mm</td></tr>
+		<tr><td>Saddle</td><td>Bontrager Arvada, steel rails</td></tr>
+		<tr><td>Seatpost</td><td>TranzX JD-YSP18, 130 mm travel</td></tr>
+		<tr><td>Extras</td><td>Internal cable routing, Mino Link geometry adjustment</td></tr>
+
+
+        </table>
+      </div>
+	</div>
+  </div>
+  
+      <!-- Bike 5 -->
+    <div class="bike-card" onclick="openModal('bike5')">
+      <img src="images/d11.jpg" height="150px" alt="Scott Spark RC 900 SL XX1 AXS ">
+      <h3>Scott Spark RC 900 SL XX1 AXS</h3>
+      <p><strong>R 71,500</strong></p>
+    </div>
+  
+  <!-- MODAL TEMPLATE FOR BIKE 5 -->
+	<div id="bike5" class="modal">
+		<div class="modal-content" style="max-width: 90%;">
+
+			<span class="close" onclick="closeModal('bike5')">&times;</span>
+
+	<!-- Manually scrollable -->
+<iframe
+  title="Bike 2 photos"
+  width="100%"
+  height="240"
+  frameborder="0"
+  scrolling="auto"
+  srcdoc='
+ 
+        <nobr>
+          <img src="images/d1.jpg" height="150"> &nbsp;
+          <img src="images/d2.jpg" height="150"> &nbsp;
+          <img src="images/d3.jpg" height="150"> &nbsp;
+          <img src="images/d4.jpg" height="150"> &nbsp;
+          <img src="images/d5.jpg" height="150"> &nbsp;
+          <img src="images/d6.jpg" height="150"> &nbsp;
+          <img src="images/d7.jpg" height="150"> &nbsp;
+          <img src="images/d8.jpg" height="150">
+        </nobr>
+
+  '>
+</iframe>
+
+
+      <h2>Scott Spark RC 900 SL XX1 AXS</h2>
+      <p><strong>Price:</strong> R 71,500</p>
+      <div class="specs">
+        <h3>Specs</h3>
+        <table>
+		<tr><td>Model Year</td><td>2025 (latest available electronic full-suspension XC model)</td></tr>
+		<tr><td>Frame</td><td>Spark RC Carbon HMX SL (IMP technology, 1870 g with shock), integrated suspension, adjustable head angle, Syncros cable system</td></tr>
+		<tr><td>Groupset</td><td>SRAM XX SL Eagle Transmission AXS, 12-speed wireless electronic (Power Meter integrated)</td></tr>
+		<tr><td>Wheel Size</td><td>29 Inch</td></tr>
+		<tr><td>Category</td><td>Cross-Country / Racing</td></tr>
+		<tr><td>Front Suspension</td><td>RockShox SID Ultimate Flight Attendant, electronically controlled, 120 mm</td></tr>
+		<tr><td>Rear Suspension</td><td>RockShox SIDLuxe Ultimate Flight Attendant, electronically controlled, 120 mm</td></tr>
+		<tr><td>Brakes</td><td>SRAM Level Ultimate Stealth hydraulic discs, 4-piston (180 mm front, 160 mm rear)</td></tr>
+		<tr><td>Crankset</td><td>SRAM XX SL Eagle AXS Transmission carbon with Quarq power meter, 34 T</td></tr>
+		<tr><td>Cassette</td><td>SRAM XX SL Eagle Transmission, 10-52 T</td></tr>
+		<tr><td>Chain</td><td>SRAM CN XX SL Eagle Transmission</td></tr>
+		<tr><td>Rims</td><td>Syncros Silverton SL2-30 CL carbon, DT Swiss 240 EXP hubs, tubeless</td></tr>
+		<tr><td>Tires</td><td>Maxxis Rekon Race, 29 × 2.4", EXO, tubeless ready</td></tr>
+		<tr><td>Handlebar</td><td>Syncros Fraser iC SL XC carbon, 740 mm, 8° backsweep</td></tr>
+		<tr><td>Saddle</td><td>Syncros Belcarra SL Regular 1.0, carbon rails</td></tr>
+		<tr><td>Seatpost</td><td>RockShox Reverb AXS dropper (100 mm S, 125 mm L/XL)</td></tr>
+		<tr><td>Extras</td><td>SRAM AXS Powerpack, SRAM TyreWiz, integrated tools, adjustable head angle</td></tr>
+
+
+
+        </table>
+      </div>
+    
+	
+	</div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  
+        <!-- Bike 6 -->
+    <div class="bike-card" onclick="openModal('bike6')">
+      <img src="images/e11.jpg" height="150px" alt="Specialized Epic 8 ">
+      <h3>Specialized Epic 8</h3>
+      <p><strong>R 150,000</strong></p>
+    </div>
+  
+  <!-- MODAL TEMPLATE FOR BIKE 6 -->
+	<div id="bike6" class="modal">
+		<div class="modal-content" style="max-width: 90%;">
+
+			<span class="close" onclick="closeModal('bike6')">&times;</span>
+
+<iframe
+  title="Bike 2 photos"
+  width="100%"
+  height="240"
+  frameborder="0"
+  scrolling="auto"
+  srcdoc='
+ 
+        <nobr>
+          <img src="images/e1.jpg" height="150"> &nbsp;
+          <img src="images/e2.jpg" height="150"> &nbsp;
+          <img src="images/e3.jpg" height="150"> &nbsp;
+          <img src="images/e4.jpg" height="150"> &nbsp;
+          <img src="images/e5.jpg" height="150"> &nbsp;
+          <img src="images/e6.jpg" height="150"> &nbsp;
+      
+          <img src="images/e7.jpg" height="150">
+        </nobr>
+
+  '>
+</iframe>
+
+
+
+      <h2>Specialized Epic 8</h2>
+      <p><strong>Price:</strong> R 150,000</p>
+      <div class="specs">
+        <h3>Specs</h3>
+        <table>
+        <tr><th colspan="2">Key Specs</th></tr>
+        <tr><td>Frame</td><td>S-Works FACT 12m Carbon Large</td></tr>
+        <tr><td>Fork</td><td>RockShox SID Ultimate</td></tr>
+        <tr><td>Wheelset</td><td>Roval Control SL</td></tr>
+        <tr><td>Tyres</td><td>Specialized Fast Trak</td></tr>
+
+        <tr><th colspan="2">Components</th></tr>
+        <tr><td>Front Derailleur</td><td>None</td></tr>
+        <tr><td>Rear Derailleur</td><td>SRAM XX SL Eagle AXS</td></tr>
+        <tr><td>Shifters</td><td>SRAM AXS POD Ultimate Controller</td></tr>
+        <tr><td>Crankset</td><td>SRAM XX SL Eagle Power</td></tr>
+        <tr><td>Cassette</td><td>SRAM XX Eagle SL 10-52</td></tr>
+        <tr><td>Chain</td><td>SRAM XX SL Eagle</td></tr>
+        <tr><td>Brakes</td><td>SRAM Level Ultimate Stealth</td></tr>
+        <tr><td>Stem</td><td>None (Integrated)</td></tr>
+        <tr><td>Handlebar</td><td>Syncros Cockpit</td></tr>
+        <tr><td>Seatpost</td><td>S-Works Carbon</td></tr>
+        <tr><td>Saddle</td><td>Prologo</td></tr>
+        <tr><td>Pedals</td><td>None</td></tr>
+
+        <tr><th colspan="2">Extras</th></tr>
+        <tr><td>Included</td><td>Top-tier S-Works build with fully wireless drivetrain</td></tr>
+
+
+
+        </table>
+      </div>
+    
+	
+	</div>
+  </div>
+  
+  
+  
+    </div>
+
+
+    
+
+ 
+
+  <footer>
+  <hr>
+  <center>
+    <h3>CycleHub</h3>
+    <p>ST Number: ST10465374</p>
+    
+    <p>1236 Cycle Street, Johannesburg, South Africa</p>
+    <p>Email: <a href="mailto:CycleHub@gmail.com">CycleHub@gmail.com</a> | Phone: 067 912 9825</p>
+    
+   
+
+    
+    <p>&copy; 2025 CycleHub. All rights reserved.</p>
+  </center>
+  <hr>
+</footer>
+
+
+</body>
+</html>

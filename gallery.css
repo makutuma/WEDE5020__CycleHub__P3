@@ -1,0 +1,193 @@
+/* ===========================
+   General Gallery Styling
+=========================== */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #d2b48c, #f4f1ea, #fff);
+  margin: 0;
+  padding: 0;
+  color: #3e2723;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+/* ===========================
+   Page Title
+=========================== */
+h1 {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 42px;
+  color: #4b3621;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ===========================
+   Gallery Thumbnails
+=========================== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.gallery img {
+  width: 150px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+/* ===========================
+   Lightbox Overlay
+=========================== */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  padding-top: 60px;
+  text-align: center;
+}
+
+/* Lightbox Image */
+.lightbox-content {
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  animation: fadeIn 0.5s;
+}
+
+/* Caption */
+.caption {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.close:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+/* Navigation Arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 50px;
+  padding: 10px;
+  user-select: none;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+  color: #ffd700;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* ===========================
+   Responsive Media Queries
+=========================== */
+@media (max-width: 768px) {
+  .gallery img {
+    width: 120px;
+  }
+
+  .prev, .next {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery img {
+    width: 90px;
+  }
+
+  .prev, .next {
+    font-size: 30px;
+  }
+
+  .close {
+    font-size: 30px;
+    top: 10px;
+    right: 15px;
+  }
+}
+/* ===========================
+   Navigation Bar
+=========================== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+  background: #4b3621;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+/* Responsive Navbar */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

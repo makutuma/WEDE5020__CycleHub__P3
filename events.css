@@ -1,0 +1,168 @@
+/* events.css */
+
+/* General body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #d2b48c, #f4f1ea); /* soft brown gradient */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navigation bar */
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+  background: #5c4033;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  color: #3e2723;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  font-family: 'Georgia', serif;
+}
+
+/* Events Section */
+.events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Event Card */
+.event-card {
+  max-width: 500px;
+  width: 90%;
+  background: #fffdf8;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.event-card h2 {
+  color: #5c4033;
+  font-size: 26px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.event-card h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d2b48c;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+.event-card p {
+  font-size: 16px;
+  color: #444;
+  margin: 6px 0;
+}
+
+.event-card p b {
+  color: #000;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .event-card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  color: #3e2723;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  font-family: 'Georgia', serif;
+}
+
+/* Race cards (tables) */
+table[border="2"] {
+  margin: 25px auto;
+  width: 70%;
+  border-collapse: collapse;
+  background: #fffdf8;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+table[border="2"]:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+table[border="2"] h2 {
+  color: #5c4033;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+table[border="2"] p {
+  font-size: 18px;
+  color: #444;
+  margin: 6px 0;
+}
+
+/* Add subtle accent line under each h2 */
+table[border="2"] h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d2b48c;
+  margin-top: 6px;
+  border-radius: 2px;
+}

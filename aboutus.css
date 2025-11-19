@@ -1,0 +1,252 @@
+/* ===========================
+   General Page Styling
+=========================== */
+body {
+  font-family: Georgia, serif;
+  background-color: #f4f1ea; /* soft beige */
+  color: #4b3f36;            /* warm brown text */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+table {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* allows nav items to wrap on small screens */
+  border-spacing: 10px;
+}
+
+table td {
+  margin: 5px;
+}
+
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+/* Watermark section */
+.watermark {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.watermark p {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #4b3f36;
+}
+
+.watermark img {
+  opacity: 0.4;
+  width: 100%;       /* makes it responsive */
+  max-width: 900px;  /* prevents it from being too large */
+  height: auto;      /* keeps proportions */
+  border-radius: 15px;
+}
+
+/* ===========================
+   Navigation Bar Styling
+=========================== */
+
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* items wrap on smaller screens */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+  background: #4b3621;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+/* Tablets */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+.hero {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hero h1 {
+  font-size: 2.2em;
+  margin-bottom: 5px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 0;
+  color: #5c4b40;
+}
+
+.hero .watermark {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.hero .watermark p {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #4b3f36;
+}
+
+.hero .watermark img {
+  width: 100%;
+  max-width: 900px; /* still limits it on large screens */
+  height: auto;
+}
+
+
+
+/* ===========================
+   Content Sections
+=========================== */
+section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+section h2 {
+  color: #191950; /* navy headings */
+  border-bottom: 2px solid #ffcc66;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+section ul li:hover {
+  background: #fffae6; /* soft highlight */
+}
+
+section a {
+  color: #191950;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 0;
+  font-size: 0.9em;
+  color: #6b5a4c;
+  background: #e6ddd1;
+  border-top: 2px solid #d1c4b2;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  table {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  table td a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
+
+  section {
+    padding: 0 10px;
+  }
+}

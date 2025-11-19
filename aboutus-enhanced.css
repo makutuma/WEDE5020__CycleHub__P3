@@ -1,0 +1,55 @@
+/* Lightbox */
+.lightbox {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 3000;
+}
+.lightbox img {
+  width: 60%; max-width: 1000px; border-radius: 10px;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 2000;
+}
+.modal-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+}
+
+/* Scroll Button */
+.scroll-btn {
+  position: fixed; right: 25px; bottom: 35px;
+  background: #4b3f36;
+  color: #fff;
+  border: none; border-radius: 50%;
+  width: 45px; height: 45px;
+  font-size: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+/* Active Navigation */
+.active-nav {
+  border-bottom: 3px solid #4b3f36;
+}
+
+/* small helper styles for the "Read More" button we inject */
+.about-readmore {
+  margin-top: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background: #4b3621;
+  color: white;
+  border-radius: 6px;
+  border: none;
+}
